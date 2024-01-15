@@ -14,6 +14,8 @@
 
 .right-h{
     flex: 1;
+    position: relative;
+    background: var(--orange);
 }
 
 .the-best-ad{
@@ -61,3 +63,122 @@
     letter-spacing: 1px;
     width: 80%;
 }
+
+.figures{
+    display: flex;
+    gap: 2rem;
+}
+
+.figures>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.figures>div>span:nth-of-type(1){
+    font-size: 2rem;
+    color: white;
+}
+
+.figures>div>span:nth-of-type(2){
+    text-transform: uppercase;
+    color: var(--gray);
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+.hero-buttons>button:nth-of-type(1){
+    width: 8rem;
+    color: #fff;
+    background: var(--orange);
+}
+
+.hero-buttons>button:nth-of-type(2){
+    width: 8rem;
+    color: #fff;
+    background: transparent;
+    border: 1px solid var(--orange);
+}
+
+.right-h>button{
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    color: black;
+}
+
+.hart-rate{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: fit-content;
+    background: var(--darkGrey);
+    padding: 1rem;
+    align-items: start;
+    position: absolute;
+    right: 4rem;
+    top: 7rem;
+    border-radius: 5px;
+}
+
+.hart-rate>:nth-child(1){
+    width: 2rem;
+}
+
+.hart-rate>:nth-child(2){
+    color: var(--gray);
+}
+
+.hart-rate>:nth-child(3){
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.hero-img{
+    position: absolute;
+    width: 23rem;
+    top: 10rem;
+    right: 8rem;
+}
+
+.hero-img-back{
+    position: absolute;
+    width: 15rem;
+    top: 5rem;
+    right: 20rem;
+    z-index: -1;
+}
+
+.calorie{
+    display: flex;
+    gap: 2rem;
+    background: var(--caloryCard);
+    border-radius: 5px;
+    padding: 1rem;
+    width: fit-content;
+    position: absolute;
+    top: 32rem;
+    right: 27rem;
+}
+
+.calorie>img{
+    width: 3rem;
+}
+
+.calorie>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calorie>div>:nth-child(1){
+    color: var(--gray);
+}
+.calorie>div>:nth-child(2){
+    color: #fff;
+    font-size: 1.5rem;
+}
+
