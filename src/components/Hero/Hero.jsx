@@ -6,7 +6,12 @@ import hero_image_back from '../../assets/hero_image_back.png'
 import Hart from '../../assets/heart.png'
 import Calories from '../../assets/calories.png'
 
+import {motion} from 'framer-motion'
+
 const Hero = () => {
+
+    const trans = {type : 'spring' , duration : 7}
+
   return (
     <div className="hero">
         <div className="blur"></div>
@@ -14,7 +19,11 @@ const Hero = () => {
             <Header />
             {/* The best ad section */}
             <div className="the-best-ad">
-                <div></div>
+                <motion.div
+                    initial={{left:'238px'}}
+                    whileInView={{left:'7px'}}
+                    transition={trans}
+                ></motion.div>
                 <span>The Best Fitness Club In Kurunegala</span>
             </div>
             {/* heder text section */}
@@ -59,16 +68,24 @@ const Hero = () => {
                 Join Now
             </button>
 
-            <div className="hart-rate">
+            <motion.div 
+                initial={{right:'2rem'}}
+                whileInView={{right:'4rem'}}
+                transition={trans}
+            className="hart-rate">
                 <img src={Hart} alt="" />
                 <span>Hart Rate</span>
                 <span>116 bpm</span>
-            </div>
+            </motion.div>
 
             {/* hero images */}
 
             <img src={hero_image} alt="" className='hero-img' />
-            <img src={hero_image_back} alt="" className='hero-img-back' />
+            <motion.img 
+                initial={{top:'-5rem'}}
+                whileInView={{top:'4rem'}}
+                transition={trans}
+            src={hero_image_back} alt="" className='hero-img-back' />
 
             {/* calories */}
             <div className="calorie">

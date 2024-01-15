@@ -4,10 +4,14 @@ import { testimonialsData } from '../../data/testimonialsData'
 import leftArrow from '../../assets/leftArrow.png'
 import rightArrow from '../../assets/rightArrow.png'
 
+import {motion} from 'framer-motion'
+
 const Testimonials = () => {
 
     const [selected , setSelected] = useState(0);
     const tLength = testimonialsData.length;
+
+    const trans = {type : 'spring' , duration : 7};
 
   return (
     <div className="testimonials">
@@ -27,8 +31,16 @@ const Testimonials = () => {
             </span>
         </div>
         <div className="right-t">
-            <div></div>
-            <div></div>
+            <motion.div
+                initial={{right:"1rem"}}
+                whileInView={{right:"9rem"}}
+                transition={trans}
+            ></motion.div>
+            <motion.div
+            initial={{right:"11rem"}}
+            whileInView={{right:"7rem"}}
+            transition={trans}
+            ></motion.div>
             <img src={testimonialsData[selected].image} alt="" />
             <div className="arrows">
                 <img src={leftArrow} alt=""
