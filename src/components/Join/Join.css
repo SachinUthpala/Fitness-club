@@ -1,0 +1,58 @@
+.join{
+    display: flex;
+    padding: 0 2rem;
+    gap: 10rem;
+}
+
+.left-j{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.left-j>hr{
+    width: 10.5rem;
+    position: absolute;
+    margin: -10px 0;
+    background: var(--orange);
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+}
+
+.left-j>div{
+    display: flex;
+    gap: 1rem;
+}
+
+.right-j{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.email-container{
+    display: flex;
+    gap: 3rem;
+    background-color: var(--gray);
+    padding: 1rem 2rem;
+}
+
+.email-container>input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--lightgray);
+    font-size: 14px;
+}
+
+::placeholder{
+    color: var(--lightgray);
+    font-size: 14px;
+}
+
+.btn-j{
+    background-color: var(--orange);
+    color: #fff;
+}
