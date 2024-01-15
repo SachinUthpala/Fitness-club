@@ -44,3 +44,14 @@
   cursor: pointer;
 
 }
+
+.blur{
+  background-color: #f48815d5;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(212px);
+  z-index: -9;
+  width: 22rem;
+  height: 30rem;
+  left: 0;
+}

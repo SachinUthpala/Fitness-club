@@ -1,0 +1,35 @@
+.footer-container{
+    position: relative;
+}
+
+.footer-container>hr{
+    width: 90%;
+    border: 1px solid var(--orange) ;
+    border-radius: 10px;
+}
+
+.footer{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.social>img{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.logo > img{
+    width: 10rem;
+}
