@@ -12,6 +12,7 @@ import tick from "../../assets/tick.png"
 const Reasons = () => {
   return (
     <div className="reasons" id="reasons">
+        <div className="blur"></div>
         <div className="left-r">
             <img src={imagel} alt="" />
             <img src={image2} alt="" />

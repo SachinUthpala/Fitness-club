@@ -8,6 +8,7 @@ import Logo from '../../assets/logo.png'
 const Footer = () => {
   return (
     <div className="footer-container">
+        <div className="blur"></div>
         <hr />
         <div className="footer" id="foot">
             <div className="social">
