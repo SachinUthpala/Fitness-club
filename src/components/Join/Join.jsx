@@ -24,7 +24,7 @@ const Join = () => {
         <div className="left-j">
         <hr />
             <div>
-                <span className='stroke-text'>READY TO</span>
+                <span className='stroke-text'>READY TO JOIN</span>
                 <span >LEVEL UP</span>
             </div>
             <div>
